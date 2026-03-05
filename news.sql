@@ -14,6 +14,9 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+-- news.sql ima samo pravila, da ustvari nove tabele. Ampak ni podatkovna baza.
+-- V phpmyadmin naredim dejansko bazo tako, da importam news.sql. Tam se shranijo dejanske vrednosti.
+-- Lahko zamenjam podatkovno bazo ($conn = new mysqli(...database:'whatever-phpmyadmin');), news.sql pa ostane isti.
 
 -- Dumping database structure for news
 CREATE DATABASE IF NOT EXISTS `news` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_slovenian_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;

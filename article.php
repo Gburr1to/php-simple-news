@@ -33,7 +33,7 @@ if($article == null){
         <p><b>Povzetek:</b> <?php echo $article->abstract;?></p>
         <p><?php echo $article->text; ?></p>
         <p>Objavil: <?php echo $article->username; ?>, <?php echo date_format(date_create($article->date), 'd. m. Y \ob H:i:s'); ?></p>
-        <a href="/"><button>Nazaj</button></a>
+        <a href="<?php  echo BASE_URL; ?>"><button>Nazaj</button></a>
     </div>
 </div>
 
